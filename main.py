@@ -5,6 +5,8 @@ from os import environ
 
 app = Flask("Fun Seekers Tournament API")
 
+environ['FLASK_ENV'] = 'production'
+
 database = Connect("database.sqlite3")
 
 
