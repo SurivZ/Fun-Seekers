@@ -10,5 +10,5 @@ MarkupSafe==2.1.5
 packaging==24.0
 pipUpdateAll==1.0.0
 pycodestyle==2.11.1
-PySQLiteDBConnection==1.0.5
+PySQLiteDBConnection==1.0.6
 Werkzeug==3.0.1
