@@ -33,6 +33,11 @@ def resouerce_not_found(error):
     return Response(status=404, response=dumps({"error": 404, "message": "Resource not found"}), content_type="application/json")
 
 
+@app.errorhandler(405)
+def method_not_allowed(error):
+    return Response(status=405, response=dumps({"error": 405, "message": "Method not allowed"}), content_type="application/json")
+
+
 @app.route("/test", methods=["GET"])
 def test():
     database.connect()
